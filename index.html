@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuel Reis | Design Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Theme Toggle -->
+    <div class="theme-toggle-wrapper">
+        <button id="theme-toggle" class="theme-btn" aria-label="Switch to light mode" aria-describedby="theme-tooltip">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <line x1="12" y1="2" x2="12" y2="5"/>
+            <line x1="12" y1="19" x2="12" y2="22"/>
+            <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/>
+            <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
+            <line x1="2" y1="12" x2="5" y2="12"/>
+            <line x1="19" y1="12" x2="22" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/>
+            <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+        </svg>
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        </button>
+        <div id="theme-tooltip" role="tooltip" class="icon-tooltip">Switch to light mode</div>
+    </div>
+
+    <div class="background-glow"></div>
+    <div class="background-glow-2"></div>
+    
+    <main id="main-content" class="container">
+        
+        <!-- Hero Section -->
+        <section class="hero fade-in">
+            <a href="#about" style="display: inline-block;">
+                <div class="profile-pic">
+                    <img src="assets/00.png" alt="Portrait of Manuel Reis">
+                </div>
+            </a>
+            <h1 class="hero-title interactive-text">
+                <span class="hero-line"><span class="word">I</span> <span class="word">don't</span> <span class="word">just</span> <span class="word">make</span> <span class="word">things</span> <span class="word text-green">look</span> <span class="word text-green">good.</span></span><br>
+                <span class="hero-line"><span class="word text-muted">I</span> <span class="word text-muted">make</span> <span class="word text-muted">them</span> <span class="word text-muted">make</span> <span class="word text-muted">sense</span></span>
+            </h1>
+            <p class="hero-subtitle">
+                Crafting bold visuals and seamless flows.<br>
+                powered by coffee and puppy videos
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-pill">
+                    Projects? Scroll down
+                </a>
+                <span class="btn-caption">Don't be shy</span>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="introduction fade-in">
+            <div class="divider">
+                <span class="divider-text">INTRODUCTION</span>
+            </div>
+            <h2 class="intro-text">
+                A creative <span class="text-white">problem solver</span> working across branding, UX, motion, and visual storytelling, focused on <span class="text-white">turning ideas</span> into clear, engaging digital experiences that actually work.
+            </h2>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section id="projects" class="case-studies fade-in">
+            <div class="divider">
+                <span class="divider-text">CASE STUDIES</span>
+                <span class="divider-text right">SELECTED WORK</span>
+            </div>
+
+            <div class="project-cards-grid">
+                <!-- Card 1: Emerald Clinical -->
+                <a href="emerald-clinical.html" class="proj-card" id="card-emerald">
+                    <div class="proj-card-top">
+                        <div class="proj-card-meta">
+                            <h3 class="proj-card-name">Emerald Clinical</h3>
+                            <span class="proj-card-cat">Branding</span>
+                        </div>
+                    </div>
+                    <div class="proj-card-image">
+                        <img src="assets/Emerald_cover_Homepage.png" alt="Emerald Clinical project showcase" class="proj-card-img">
+                    </div>
+                    <div class="proj-card-bottom">
+                        <span class="proj-card-year">2024</span>
+                        <span class="proj-card-cta">View case study</span>
+                    </div>
+                </a>
+
+                <!-- Card 2: Humanly -->
+                <a href="humanly.html" class="proj-card" id="card-humanly">
+                    <div class="proj-card-top">
+                        <div class="proj-card-meta">
+                            <h3 class="proj-card-name">Humanly</h3>
+                            <span class="proj-card-cat">UX/UI</span>
+                        </div>
+                    </div>
+                    <div class="proj-card-image">
+                        <img src="assets/Humanly_cover_Homepage.png" alt="Humanly project showcase" class="proj-card-img">
+                    </div>
+                    <div class="proj-card-bottom">
+                        <span class="proj-card-year">2025</span>
+                        <span class="proj-card-cta">View case study</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section fade-in">
+            <div class="divider">
+                <span class="divider-text">KIND WORDS FROM TALENTED PEOPLE</span>
+            </div>
+            <blockquote class="quote-text">
+                A user interface is like a joke <span class="text-green">if you have to explain it it's not that good.</span>
+            </blockquote>
+            <cite class="quote-author">MARTIN LEBLANC</cite>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-me fade-in">
+            <div class="divider">
+                <span class="divider-text">ABOUT ME</span>
+            </div>
+            <div class="about-content">
+                <p>
+                    Hi, I'm a <span class="text-primary">UX/UI Designer based in Lisbon with 9 years of experience</span> designing digital products.
+                </p>
+                    <p class="intro-paragraph">
+                        I enjoy working across the <span class="text-primary">whole design process</span>, from understanding the problem and mapping flows, to designing interfaces and prototyping ideas. <span class="text-white">Being involved end-to-end helps me keep things simple and make sure the final product actually makes sense for the people using it.</span>
+                    </p>
+                <p>
+                    Outside of design, I spend my time reading, cycling around the city, experimenting with clay, or playing video games. I grew up with games like <span class="text-primary">The Legend of Zelda</span>, which probably explains why I still love well-crafted worlds, thoughtful systems, and good interaction design.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer fade-in">
+        <span class="footer-left">©2026 MANUEL REIS, DESIGN PORTFOLIO</span>
+        <a href="https://www.linkedin.com/in/manuel-reis-8537a1b6/" target="_blank" rel="noopener noreferrer" class="footer-right text-green">LINKEDIN</a>
+    </footer>
+
+</body>
+</html>

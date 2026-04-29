@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanly — Case Study | Manuel Reis</title>
+    <meta name="description" content="Humanly UX/UI case study — Designing a collaborative workspace for teams. Designed by Manuel Reis.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="humanly.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body class="case-study-page" id="top">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle-wrapper">
+        <button id="theme-toggle" class="theme-btn" aria-label="Switch to light mode" aria-describedby="theme-tooltip">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <line x1="12" y1="2" x2="12" y2="5"/>
+            <line x1="12" y1="19" x2="12" y2="22"/>
+            <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/>
+            <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
+            <line x1="2" y1="12" x2="5" y2="12"/>
+            <line x1="19" y1="12" x2="22" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/>
+            <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+        </svg>
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        </button>
+        <div id="theme-tooltip" role="tooltip" class="icon-tooltip">Switch to light mode</div>
+    </div>
+
+    <!-- ── Navigation ── -->
+    <nav class="hm-nav">
+        <a href="index.html" class="hm-back-link">← BACK</a>
+    </nav>
+
+    <main id="main-content" class="hm-main">
+
+        <!-- ── 01 Hero ── -->
+        <section class="hm-hero fade-in">
+            <div class="hm-hero-card" style="border-radius: 10px;">
+                <img src="assets/Hero laptop UI.png" alt="Hero laptop UI" class="hm-image hm-image--hero">
+            </div>
+        </section>
+
+        <!-- ── 02 Summary ── -->
+        <section class="hm-section fade-in">
+            <div class="hm-divider hm-divider--bottom">
+                <span class="hm-divider-label">SUMMARY</span>
+            </div>
+            <div class="hm-two-col hm-two-col--overview">
+                <div class="hm-col-left">
+                    <h1 class="hm-heading-large">Designed for real workflows, not edge cases.</h1>
+                </div>
+                <div class="hm-col-right">
+                    <p>Humanly is a centralised HR platform designed to simplify everyday workflows for employees and HR teams.</p>
+                    <p>It brings payroll, time-off, incidents and internal resources into one calm, reliable experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── 03 Project Metadata + Secondary Meta ── -->
+        <section class="hm-section hm-section--meta fade-in">
+            <div class="hm-meta-row">
+                <div class="hm-meta-item">
+                    <span class="hm-meta-label">CLIENT</span>
+                    <span class="hm-meta-value">Humanly</span>
+                </div>
+                <div class="hm-meta-item">
+                    <span class="hm-meta-label">YEAR</span>
+                    <span class="hm-meta-value">2025</span>
+                </div>
+                <div class="hm-meta-item">
+                    <span class="hm-meta-label">ROLE</span>
+                    <span class="hm-meta-value">UX/UI Senior Designer</span>
+                </div>
+                <div class="hm-meta-item">
+                    <span class="hm-meta-label">SCOPE</span>
+                    <span class="hm-meta-value">UX/UI Design</span>
+                </div>
+            </div>
+
+            <div class="hm-meta-row hm-meta-row--secondary">
+                <div class="hm-meta-item">
+                    <span class="hm-meta-label">COMPANY SIZE</span>
+                    <span class="hm-meta-value hm-meta-value--small">Mid-sized company in growth phase.</span>
+                </div>
+                <div class="hm-meta-item">
+                    <span class="hm-meta-label">INDUSTRY</span>
+                    <span class="hm-meta-value hm-meta-value--small">HR technology / Internal workforce management.</span>
+                </div>
+                <div class="hm-meta-item">
+                    <span class="hm-meta-label">BUSINESS MODEL</span>
+                    <span class="hm-meta-value hm-meta-value--small">B2B SaaS platform designed for internal HR operations.</span>
+                </div>
+                <div class="hm-meta-item">
+                    <span class="hm-meta-label">PROJECT TYPE</span>
+                    <span class="hm-meta-value hm-meta-value--small">Product initiative with cross-functional collaboration.</span>
+                </div>
+                <div class="hm-meta-item">
+                    <span class="hm-meta-label">TIMELINE</span>
+                    <span class="hm-meta-value hm-meta-value--small">2 months from discovery to rollout.</span>
+                </div>
+            </div>
+
+            <img src="assets/Team collaboration image.png" alt="Team collaboration" class="hm-image hm-image--wide" style="margin-top: 2.5rem;">
+        </section>
+
+        <!-- ── 04 The Brief ── -->
+        <section class="hm-section fade-in" style="padding-bottom: 1rem;">
+            <div class="hm-divider hm-divider--bottom">
+                <span class="hm-divider-label">THE BRIEF</span>
+            </div>
+            <div class="hm-two-col hm-two-col--brief">
+                <div class="hm-col-left">
+                    <span class="hm-green-label">BUSINESS GOALS</span>
+                    <p>Centralise HR processes into a single, trusted platform.</p>
+                    <p>Reduce manual admin work and repetitive requests and improve employee autonomy without losing control or accuracy.</p>
+                </div>
+                <div class="hm-col-right">
+                    <span class="hm-green-label">PROBLEM</span>
+                    <p>HR tasks were scattered across multiple tools and spreadsheets, speeding too much time resolving avoidable issues.</p>
+                    <p>Employees lacked visibility over basic actions like time-off or payments.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── 05 Discovery ── -->
+        <section class="hm-section fade-in" style="padding-bottom: 3rem;">
+            <div class="hm-divider hm-divider--split hm-numbered-divider">
+                <span></span>
+                <span class="hm-divider-label hm-divider-label--right">01 DISCOVERY</span>
+            </div>
+            <p class="hm-intro-paragraph">Discovery focused on understanding real HR workflows, everyday friction and how different roles interact with internal systems.</p>
+            <div class="hm-subsection-label" style="margin-bottom: 0;">
+                <span class="hm-green-label" style="font-size: 1.2rem; color: var(--primary-color);">METHODS USED</span>
+                <p>The goal was clarity, not documentation for documentation’s sake.</p>
+                <div class="hm-col-right" style="padding-top: 0.5rem;">
+                    <p style="margin-bottom: 0;">Stakeholder interviews &nbsp;&middot;&nbsp; Employee interviews &nbsp;&middot;&nbsp; Personas &nbsp;&middot;&nbsp; Process mapping &nbsp;&middot;&nbsp; Competitive analysis</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ── 06 Design Stages ── -->
+        <section class="hm-section fade-in" style="padding-top: 2rem;">
+            <div class="hm-divider hm-divider--bottom">
+                <span class="hm-divider-label">DESIGN STAGES</span>
+            </div>
+            
+            <div class="hm-stages-grid">
+                <div class="hm-stage-item">
+                    <div class="hm-stage-header">
+                        <span class="hm-stage-number">01</span>
+                        <span class="hm-stage-title">RESEARCH</span>
+                    </div>
+                    <ul class="hm-stage-list">
+                        <li>Competitor analysis</li>
+                        <li>User pain points</li>
+                        <li>Problem definition</li>
+                    </ul>
+                </div>
+                <div class="hm-stage-item">
+                    <div class="hm-stage-header">
+                        <span class="hm-stage-number">02</span>
+                        <span class="hm-stage-title">UX DESIGN</span>
+                    </div>
+                    <ul class="hm-stage-list">
+                        <li>Flows & IA</li>
+                        <li>Wireframes</li>
+                        <li>Validation</li>
+                    </ul>
+                </div>
+                <div class="hm-stage-item">
+                    <div class="hm-stage-header">
+                        <span class="hm-stage-number">03</span>
+                        <span class="hm-stage-title">UI DESIGN</span>
+                    </div>
+                    <ul class="hm-stage-list">
+                        <li>Visual system</li>
+                        <li>Components</li>
+                        <li>UI Kit</li>
+                    </ul>
+                </div>
+                <div class="hm-stage-item">
+                    <div class="hm-stage-header">
+                        <span class="hm-stage-number">04</span>
+                        <span class="hm-stage-title">ADAPTATIVITY</span>
+                    </div>
+                    <ul class="hm-stage-list">
+                        <li>Responsive logic</li>
+                        <li>Accessibility checks</li>
+                        <li>Platform consistency</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Timeline ── -->
+        <section class="hm-section fade-in" style="padding-bottom: 1rem;">
+            <div class="hm-divider hm-divider--bottom">
+                <span class="hm-divider-label">TIMELINE</span>
+            </div>
+
+            <div class="hm-timeline">
+                <div class="hm-timeline-weeks">
+                    <div class="hm-timeline-label">WEEKS</div>
+                    <div class="hm-week-num">01</div>
+                    <div class="hm-week-num">02</div>
+                    <div class="hm-week-num">03</div>
+                    <div class="hm-week-num">04</div>
+                    <div class="hm-week-num">05</div>
+                    <div class="hm-week-num">06</div>
+                    <div class="hm-week-num">07</div>
+                    <div class="hm-week-num">08</div>
+                </div>
+                <div class="hm-timeline-bars">
+                    <div></div> <!-- Empty for WEEKS label column -->
+                    <div class="hm-timeline-bar hm-bar--research">Research</div>
+                    <div class="hm-timeline-bar hm-bar--wireframes">Wireframes</div>
+                    <div class="hm-timeline-bar hm-bar--ui-system">UI system & components</div>
+                    <div class="hm-timeline-bar hm-bar--responsive">Responsive design</div>
+                    <div class="hm-timeline-bar hm-bar--uikit">UI Kit & handoff</div>
+                    <div class="hm-timeline-bar hm-bar--details">Last details</div>
+                </div>
+                <div class="hm-timeline-footer">
+                    <div class="hm-polish-box">Polish & scale</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── 02 Research & Insights ── -->
+        <section class="hm-section fade-in" style="padding-bottom: 3rem;">
+            <div class="hm-divider hm-divider--split hm-numbered-divider">
+                <span></span>
+                <span class="hm-divider-label hm-divider-label--right">02 RESEARCH & INSIGHTS</span>
+            </div>
+            <p class="hm-intro-paragraph">Research revealed high context-switching, low task visibility and frustration around simple but frequent actions.</p>
+            
+            <div class="hm-stats-row" style="border-top: none; padding-top: 0;">
+                <div class="hm-stat-block" style="text-align: center; align-items: center;">
+                    <span class="hm-stat-number">56%</span>
+                    <span class="hm-stat-caption">Employees struggled to find the correct information for basic HR tasks.</span>
+                </div>
+                <div class="hm-stat-block" style="text-align: center; align-items: center;">
+                    <span class="hm-stat-number">47%</span>
+                    <span class="hm-stat-caption">Requests required manual HR intervention due to unclear flows or missing data.</span>
+                </div>
+                <div class="hm-stat-block" style="text-align: center; align-items: center;">
+                    <span class="hm-stat-number">31%</span>
+                    <span class="hm-stat-caption">Payroll-related issues were caused by incorrect or incomplete employee input.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── 03 Personas & User Needs ── -->
+        <section class="hm-section fade-in" style="padding-bottom: 10rem;">
+            <div class="hm-divider hm-divider--split hm-numbered-divider">
+                <span></span>
+                <span class="hm-divider-label hm-divider-label--right">03 PERSONAS & USER NEEDS</span>
+            </div>
+            <p class="hm-intro-paragraph">Two primary user groups were identified, each with very different expectations.</p>
+            
+            <div class="hm-persona-section">
+                <div class="hm-persona-card">
+                    <h3 class="hm-persona-type">EMPLOYEE</h3>
+                    <div class="hm-persona-meta">
+                        <span><strong>Age:</strong> 25-45</span>
+                        <span><strong>Role:</strong> Full-time employee across different departments.</span>
+                    </div>
+                    <div class="hm-persona-info">
+                        <h4 class="hm-persona-subtitle">Frustrations</h4>
+                        <ul>
+                            <li>Not knowing where to find specific information.</li>
+                            <li>Fear of making mistakes that affect payroll or time-off.</li>
+                        </ul>
+                        <h4 class="hm-persona-subtitle">Needs</h4>
+                        <ul>
+                            <li>Clear navigation and plain language.</li>
+                            <li>Visibility over personal data and requests.</li>
+                        </ul>
+                        <h4 class="hm-persona-subtitle">Goals</h4>
+                        <p>Complete everyday HR tasks quickly and independently, with clear feedback and full confidence in the outcome.</p>
+                    </div>
+                </div>
+
+                <img src="assets/Persona Profile.png" alt="Persona Profile" class="hm-image hm-image--persona">
+                
+                <div class="hm-persona-card">
+                    <h3 class="hm-persona-type">HR ADMIN</h3>
+                    <div class="hm-persona-meta">
+                        <span><strong>Age:</strong> 30-55</span>
+                        <span><strong>Role:</strong> HR manager or People Operations specialist.</span>
+                    </div>
+                    <div class="hm-persona-info">
+                        <h4 class="hm-persona-subtitle">Frustrations</h4>
+                        <ul>
+                            <li>Repetitive manual tasks.</li>
+                            <li>Managing approvals across disconnected tools.</li>
+                        </ul>
+                        <h4 class="hm-persona-subtitle">Needs</h4>
+                        <ul>
+                            <li>Clear overview and prioritization.</li>
+                            <li>Control without micromanaging.</li>
+                        </ul>
+                        <h4 class="hm-persona-subtitle">Goals</h4>
+                        <p>Maintain accurate data and efficient workflows while reducing manual work and preventable errors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Structural Tension ── -->
+        <section class="hm-section fade-in">
+            <div class="hm-divider hm-divider--bottom">
+                <span class="hm-divider-label">STRUCTURAL TENSION</span>
+            </div>
+            <p class="hm-intro-paragraph" style="margin-bottom: 4rem;">The core tension wasn’t usability. It was control vs autonomy.</p>
+            
+            <div class="hm-tension-grid">
+                <div class="hm-tension-card">
+                    <h4 class="hm-tension-title hm-text-blue">HR needed:</h4>
+                    <ul class="hm-tension-list">
+                        <li>Structured data</li>
+                        <li>Fewer errors</li>
+                        <li>Approval oversight</li>
+                        <li>Compliance safety</li>
+                    </ul>
+                </div>
+                <div class="hm-tension-card">
+                    <h4 class="hm-tension-title hm-text-blue">Employees wanted:</h4>
+                    <ul class="hm-tension-list">
+                        <li>Speed</li>
+                        <li>Clarity</li>
+                        <li>Fewer steps</li>
+                        <li>Independence</li>
+                    </ul>
+                </div>
+                <div class="hm-tension-card">
+                    <h4 class="hm-tension-title hm-text-blue">This created friction:</h4>
+                    <p class="hm-tension-text">The more control HR added, the more complex the flows became. The simpler the experience for employees, the less visibility HR initially felt they had.</p>
+                </div>
+            </div>
+
+            <div class="hm-highlight-quote">
+                <p>The challenge wasn’t just simplifying screens. It was designing a system where autonomy didn’t compromise accuracy.</p>
+            </div>
+        </section>
+
+        <!-- ── 04 User Flows & Information Architecture ── -->
+        <section class="hm-section fade-in">
+            <div class="hm-divider hm-divider--split hm-numbered-divider">
+                <span></span>
+                <span class="hm-divider-label hm-divider-label--right">04 USER FLOWS & IA</span>
+            </div>
+            <p class="hm-flow-header-text">Key flows were designed to reduce steps, prevent errors and remove unnecessary decisions.</p>
+            
+            <p class="hm-caption-text" style="color: #7E7E7E; margin-bottom: 2rem;">If something can be misunderstood, it eventually will.</p>
+
+            <div class="hm-flow-grid">
+                <!-- 01 -->
+                <div class="hm-flow-card">
+                    <h4 class="hm-flow-num-title">01 Request time-off</h4>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">User</span>
+                        <span class="hm-flow-val">Employee</span>
+                    </div>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">Problem</span>
+                        <span class="hm-flow-val">Employees lacked clarity on available days, policies and approval status.</span>
+                    </div>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">Design approach</span>
+                        <span class="hm-flow-val">Surface remaining balance upfront and clarify the approval flow before submission.</span>
+                    </div>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">Outcome</span>
+                        <div class="hm-flow-val hm-flow-val--arrow"><span>&darr;</span> Clarification requests</div>
+                        <div class="hm-flow-val hm-flow-val--arrow"><span>&uarr;</span> Approval speed</div>
+                    </div>
+                </div>
+                <!-- 02 -->
+                <div class="hm-flow-card">
+                    <h4 class="hm-flow-num-title">02 View payslip</h4>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">User</span>
+                        <span class="hm-flow-val">Employee</span>
+                    </div>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">Problem</span>
+                        <span class="hm-flow-val">Payslips were hard to find and difficult to understand.</span>
+                    </div>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">Design approach</span>
+                        <span class="hm-flow-val">Centralize access and present a clear breakdown of earnings and deductions.</span>
+                    </div>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">Outcome</span>
+                        <div class="hm-flow-val hm-flow-val--arrow"><span>&uarr;</span> User confidence</div>
+                        <div class="hm-flow-val hm-flow-val--arrow"><span>&darr;</span> Payroll-related questions</div>
+                    </div>
+                </div>
+                <!-- 03 -->
+                <div class="hm-flow-card">
+                    <h4 class="hm-flow-num-title">03 Payroll approval</h4>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">User</span>
+                        <span class="hm-flow-val">HR Admin</span>
+                    </div>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">Problem</span>
+                        <span class="hm-flow-val">Approvals were delayed due to missing or incorrect employee data.</span>
+                    </div>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">Design approach</span>
+                        <span class="hm-flow-val">Flag incomplete entries and support faster reviews with structured checklists and batch actions.</span>
+                    </div>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">Outcome</span>
+                        <div class="hm-flow-val hm-flow-val--arrow"><span>&darr;</span> Processing time</div>
+                        <div class="hm-flow-val hm-flow-val--arrow"><span>&darr;</span> Approval errors</div>
+                    </div>
+                </div>
+                <!-- 04 -->
+                <div class="hm-flow-card">
+                    <h4 class="hm-flow-num-title">04 Clock in / out</h4>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">User</span>
+                        <span class="hm-flow-val">Employee</span>
+                    </div>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">Problem</span>
+                        <span class="hm-flow-val">Inconsistent tracking led to errors and manual payroll corrections.</span>
+                    </div>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">Design approach</span>
+                        <span class="hm-flow-val">Enable one-tap actions with clear feedback, visibility and gentle reminders.</span>
+                    </div>
+                    <div class="hm-flow-section">
+                        <span class="hm-flow-label">Outcome</span>
+                        <div class="hm-flow-val hm-flow-val--arrow"><span>&uarr;</span> Tracking accuracy</div>
+                        <div class="hm-flow-val hm-flow-val--arrow"><span>&darr;</span> Admin corrections</div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="assets/User Flows Visualization.png" alt="User Flows Visualization" class="hm-image hm-image--wide" style="margin-top: 5rem;">
+            <p class="hm-caption-text" style="text-align: center; margin-top: 1.5rem;">Flows were simplified to reduce steps, ambiguity and approval bottlenecks.</p>
+            
+            <p class="hm-flow-caption-large">These flows were validated against the full employee journey to ensure consistency across touchpoints.</p>
+
+            <img src="assets/Information Architecture Diagram.png" alt="Information Architecture Diagram" class="hm-image hm-image--wide" style="margin-top: 2rem;">
+        </section>
+
+        <!-- ── What was difficult? ── -->
+        <section class="hm-section fade-in">
+            <div class="hm-divider hm-divider--bottom">
+                <span class="hm-divider-label">WHAT WAS DIFFICULT?</span>
+            </div>
+            <div class="hm-difficult-grid">
+                <div class="hm-difficult-item">
+                    <span class="hm-difficult-num">01</span>
+                    <p class="hm-difficult-text">On how much visibility employees should have into payroll breakdowns. HR initially preferred limited visibility to reduce “questions”. We pushed for transparency to increase trust and reduce repetitive inquiries.</p>
+                </div>
+                <div class="hm-difficult-item">
+                    <span class="hm-difficult-num">02</span>
+                    <p class="hm-difficult-text">On approval flows. Some stakeholders wanted more validation layers “just in case”. We argued that excessive safeguards were causing more delays than protection.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── A controversial decision ── -->
+        <section class="hm-section fade-in">
+            <div class="hm-divider hm-divider--bottom">
+                <span class="hm-divider-label">A CONTROVERSIAL DECISION</span>
+            </div>
+            <p class="hm-intro-paragraph">We intentionally removed certain intermediate confirmation steps in time-off and payroll flows. This reduced friction and completion time, but initially raised concerns about error risk. Instead of adding more steps, we introduced:</p>
+            
+            <div class="hm-decision-row">
+                <span class="hm-decision-point">– Inline validation</span>
+                <span class="hm-decision-point">– Contextual warnings</span>
+                <span class="hm-decision-point">– Structured input fields</span>
+            </div>
+        </section>
+
+        <!-- ── The result ── -->
+        <section class="hm-section fade-in" style="padding-bottom: 0;">
+            <div class="hm-divider hm-divider--bottom">
+                <span class="hm-divider-label">THE RESULT</span>
+            </div>
+            <p class="hm-flow-caption-large" style="text-align: center; margin-top: 6rem; margin-bottom: 1rem;">Fewer steps, fewer mistakes, faster approvals.</p>
+        </section>
+
+        <!-- ── 05 Wireframes & Iteration ── -->
+        <section class="hm-section fade-in">
+            <div class="hm-divider hm-divider--split hm-numbered-divider">
+                <span></span>
+                <span class="hm-divider-label hm-divider-label--right">05 WIREFRAMES & ITERATION</span>
+            </div>
+            <h2 class="hm-flow-caption-large" style="text-align: left; max-width: 100%; margin-bottom: 1rem;">Low-fidelity wireframes were used to validate structure and task completion before moving into UI.</h2>
+            <p class="hm-caption-text" style="color: #7E7E7E; margin-bottom: 4rem;">Designed to answer questions before users need to ask them.</p>
+
+            <div class="hm-wire-row">
+                <img src="assets/LO-RES Wireframes.png" alt="LO-RES Wireframes" class="hm-image hm-image--wireframe">
+                <div class="hm-wire-meta">
+                    <span class="hm-text-blue" style="font-size: 0.9rem;">Used to validate navigation, hierarchy and task priority.</span>
+                    <span class="hm-wire-label">LO-RES Wireframes</span>
+                </div>
+            </div>
+
+            <div class="hm-wire-row">
+                <img src="assets/HI-RES Wireframes.png" alt="HI-RES Wireframes" class="hm-image hm-image--wireframe">
+                <div class="hm-wire-meta">
+                    <span class="hm-text-blue" style="font-size: 0.9rem;">Used to refine flows, reduce friction and prepare UI decisions.</span>
+                    <span class="hm-wire-label">HI-RES Wireframes</span>
+                </div>
+            </div>
+
+            <div class="hm-wire-row" style="margin-bottom: 0;">
+                <img src="assets/Final prototypes.png" alt="Final prototypes" class="hm-image hm-image--wireframe">
+                <div class="hm-wire-meta">
+                    <span class="hm-text-blue" style="font-size: 0.9rem;">Used to simulate real usage, stress-test decisions and align with development.</span>
+                    <span class="hm-wire-label">Final prototypes</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── 06 UI Design ── -->
+        <section class="hm-section fade-in" style="padding-bottom: 1rem;">
+            <div class="hm-divider hm-divider--split hm-numbered-divider">
+                <span></span>
+                <span class="hm-divider-label hm-divider-label--right">06 UI DESIGN</span>
+            </div>
+            <div class="hm-numbered-body">
+                <p class="hm-flow-caption-large" style="text-align: left; max-width: 100%; margin-bottom: 3rem;">The interface was designed to feel calm, predictable and efficient across repeated daily use.</p>
+                
+                <div class="hm-app-grid">
+                    <div class="hm-app-col hm-app-col--left">
+                        <img src="assets/Dashboard UI.png" alt="Dashboard UI" class="hm-image hm-image--app">
+                        <img src="assets/Messages UI.png" alt="Messages UI" class="hm-image hm-image--app">
+                    </div>
+                    <div class="hm-app-col hm-app-col--mid">
+                        <img src="assets/Task List UI.png" alt="Task List UI" class="hm-image hm-image--app">
+                        <img src="assets/Desktop App.png" alt="Desktop App" class="hm-image hm-image--app">
+                    </div>
+                    <div class="hm-app-col hm-app-col--right">
+                        <img src="assets/Mobile App UI.png" alt="Mobile App UI" class="hm-image hm-image--app">
+                        <img src="assets/Settings UI.png" alt="Settings UI" class="hm-image hm-image--app">
+                    </div>
+                </div>
+                <p class="hm-caption-text" style="color: #7E7E7E; text-align: center; margin-top: 2rem; margin-bottom: 0;">Representative screens.</p>
+            </div>
+        </section>
+
+        <!-- ── 07 Responsive & Mobile Companion ── -->
+        <section class="hm-section fade-in" style="padding-bottom: 0;">
+            <div class="hm-divider hm-divider--split hm-numbered-divider">
+                <span></span>
+                <span class="hm-divider-label hm-divider-label--right">07 RESPONSIVE & MOBILE COMPANION</span>
+            </div>
+            
+            <p class="hm-flow-caption-large" style="text-align: left; max-width: 100%; margin-bottom: 1rem;">Mobile was designed as a companion experience focused on visibility and quick actions.</p>
+            <p class="hm-caption-text" style="color: #7E7E7E; margin-bottom: 3rem;">Designed to support work, not interrupt it.</p>
+            
+            <div class="hm-responsive-blue-row" style="margin-bottom: 1rem;">
+                <span>Quick requests and approvals</span>
+                <span>&nbsp;&middot;&nbsp;</span>
+                <span>Time tracking and visibility</span>
+                <span>&nbsp;&middot;&nbsp;</span>
+                <span>Notifications and reminders</span>
+            </div>
+        </section>
+
+        <!-- ── 08 Results ── -->
+        <section class="hm-section fade-in" style="padding-bottom: 1.5rem;">
+            <div class="hm-divider hm-divider--split hm-numbered-divider">
+                <span></span>
+                <span class="hm-divider-label hm-divider-label--right">08 RESULTS</span>
+            </div>
+            
+            <div class="hm-stats-row" style="border-top: none; padding-top: 0; margin-bottom: 2rem;">
+                <div class="hm-stat-block" style="text-align: center; align-items: center;">
+                    <span class="hm-stat-number">-35%</span>
+                    <span class="hm-stat-caption">Reduction in support tickets</span>
+                </div>
+                <div class="hm-stat-block" style="text-align: center; align-items: center;">
+                    <span class="hm-stat-number">+42%</span>
+                    <span class="hm-stat-caption">Increase in daily active users</span>
+                </div>
+                <div class="hm-stat-block" style="text-align: center; align-items: center;">
+                    <span class="hm-stat-number">-28%</span>
+                    <span class="hm-stat-caption">Decrease in task completion time</span>
+                </div>
+            </div>
+
+            <img src="assets/Results Visualization.png" alt="Results Visualization" class="hm-image hm-image--wide" style="margin-top: 4rem;">
+
+            <p class="hm-caption-text" style="text-align: center; margin-top: 1.5rem;">Less friction. Fewer errors. <strong>More time for real work.</strong></p>
+        </section>
+
+        <!-- ── 09 Takeaways ── -->
+        <section class="hm-section fade-in">
+            <div class="hm-divider hm-divider--split hm-numbered-divider">
+                <span></span>
+                <span class="hm-divider-label hm-divider-label--right">09 TAKEAWAYS</span>
+            </div>
+            
+            <div class="hm-numbered-body">
+                <p class="hm-flow-caption-large" style="text-align: left; max-width: 100%; margin-bottom: 1rem;">Designing internal tools isn’t about delight. It’s about respecting people’s time, reducing stress and making work feel manageable.</p>
+                <p class="hm-caption-text" style="color: #7E7E7E; margin-bottom: 4rem;">Humanly reinforced the importance of empathy, restraint and clarity in everyday software.</p>
+                
+                <img src="assets/Takeaways.png" alt="Takeaways" class="hm-image hm-image--wide">
+            </div>
+            <p class="hm-caption-text" style="text-align: center; margin-top: 1.5rem;">Good tools don’t demand attention. <strong>They earn trust.</strong></p>
+        </section>
+
+        <!-- ── Next Project ── -->
+        <section class="hm-section fade-in" style="padding-top: 4rem; padding-bottom: 2rem;">
+            <div style="border-top: 1.5px solid #333; padding-top: 6rem; display: flex; flex-direction: column; align-items: center; gap: 4rem;">
+                <a href="emerald-clinical.html" class="hm-next-card">
+                    <img src="assets/Emerald_cover_Homepage.png" alt="Emerald Clinical project showcase" class="hm-next-card-bg">
+                    <div class="hm-next-card-content">
+                        <h3 class="hm-next-card-title">Emerald Clinical</h3>
+                        <span class="hm-next-card-cta">View case study</span>
+                    </div>
+                </a>
+
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="btn-pill">
+                    Go back to the top
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ── Footer Quote ── -->
+    <div class="hm-footer-quote fade-in">
+        <p class="hm-footer-quote-text">Let’s build something people actually trust.</p>
+    </div>
+
+    <!-- ── Footer ── -->
+    <footer class="hm-footer fade-in">
+        <span class="hm-footer-copy">©2026 MANUEL REIS, DESIGN PORTFOLIO</span>
+        <a href="index.html" class="hm-footer-back">BACK TO HOME</a>
+    </footer>
+
+</body>
+</html>
