@@ -855,6 +855,7 @@
     .ec-placeholder--square { height: 220px; }
 
     .ec-stats-row { grid-template-columns: 1fr; gap: 2rem; }
+    .ec-stat-block { text-align: center; align-items: center; }
 
     .ec-swatches { flex-wrap: wrap; }
     .ec-swatch { min-width: calc(50% - 0.5rem); flex: none; }

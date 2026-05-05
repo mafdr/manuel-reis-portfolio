@@ -1077,6 +1077,13 @@
 
     .hm-stats-row { grid-template-columns: 1fr; gap: 2rem; }
 
+    .hm-stages-grid { grid-template-columns: 1fr; }
+    .hm-stage-item { align-items: center; text-align: center; }
+    .hm-stage-header { flex-direction: column; justify-content: center; gap: 0.5rem; }
+    .hm-stage-list { align-items: center; text-align: center; }
+    .hm-timeline { overflow-x: auto; padding-bottom: 1.5rem; }
+    .hm-timeline-weeks, .hm-timeline-bars { min-width: 600px; }
+
     .hm-swatches { flex-wrap: wrap; }
     .hm-swatch { min-width: calc(50% - 0.5rem); flex: none; }
 
@@ -1409,9 +1416,9 @@ body.light-mode .hm-footer-quote-text {
 }
 
 .hm-flow-num-title {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--text-green);
     letter-spacing: 0.05em;
 }
 
