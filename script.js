@@ -1,14 +1,12 @@
-// ── Theme Toggle ──
 const THEME_KEY = 'portfolio-theme';
 
-// ARIA Live Announcer for screen readers
 let announcer = document.getElementById('sr-announcer');
 if (!announcer) {
     announcer = document.createElement('div');
     announcer.id = 'sr-announcer';
     announcer.setAttribute('aria-live', 'polite');
     announcer.setAttribute('class', 'sr-only');
-    document.head.appendChild(announcer); // Or body
+    document.head.appendChild(announcer);
 }
 
 function applyTheme(theme) {
@@ -17,7 +15,6 @@ function applyTheme(theme) {
     } else {
         document.body.classList.remove('light-mode');
     }
-    // Update button icon and tooltip
     const btn = document.getElementById('theme-toggle');
     const tooltip = document.getElementById('theme-tooltip');
     
@@ -27,11 +24,8 @@ function applyTheme(theme) {
         if (tooltip) {
             tooltip.textContent = actionText;
         }
-        
-        btn.querySelector('.icon-sun').style.display  = theme === 'light' ? 'none' : 'block';
+        btn.querySelector('.icon-sun').style.display = theme === 'light' ? 'none' : 'block';
         btn.querySelector('.icon-moon').style.display = theme === 'light' ? 'block' : 'none';
-        
-        // Announce change
         if (announcer && document.readyState === 'complete') {
             announcer.textContent = theme === 'light' ? 'Light mode enabled' : 'Dark mode enabled';
         }
@@ -39,11 +33,9 @@ function applyTheme(theme) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Apply saved theme on load
     const saved = localStorage.getItem(THEME_KEY) || 'dark';
     applyTheme(saved);
 
-    // Toggle on click
     const btn = document.getElementById('theme-toggle');
     if (btn) {
         btn.addEventListener('click', () => {
@@ -54,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ── Intersection Observer for fade-in animations ──
     const observerOptions = {
         root: null,
         rootMargin: '0px',
