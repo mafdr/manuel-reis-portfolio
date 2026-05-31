@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rotki — Case Study | Manuel Reis</title>
-    <meta name="description" content="Rotki UX case study — Designing a privacy-first crypto portfolio tracker and accounting tool. Designed by Manuel Reis.">
+    <meta name="description" content="Rotki UX case study — Designing trust before ask: an onboarding redesign for a privacy-first crypto portfolio tracker. Designed by Manuel Reis.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="rotki.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
@@ -35,37 +35,37 @@
         <div id="theme-tooltip" role="tooltip" class="icon-tooltip">Switch to light mode</div>
     </div>
 
-    <!-- ── Navigation ── -->
+    <!-- Navigation -->
     <nav class="rt-nav">
         <a href="index.html" class="rt-back-link">← BACK</a>
     </nav>
 
     <main id="main-content" class="rt-main">
 
-        <!-- ── 01 Hero ── -->
+        <!-- 01 Hero -->
         <section class="rt-hero fade-in">
-            <div class="rt-hero-card" style="border-radius: 10px; background: linear-gradient(160deg, #1f0d07 0%, #3a150b 40%, #170905 100%); border: 1px solid rgba(255, 90, 54, 0.08);">
+            <div class="rt-hero-card" style="border-radius: 10px; background: linear-gradient(160deg, #07101f 0%, #0b1a3a 40%, #050917 100%); border: 1px solid rgba(139, 164, 255, 0.08);">
                 <img src="assets/Rotki_cover_Homepage.png" alt="Rotki Cover Image" class="rt-image rt-image--hero">
             </div>
         </section>
 
-        <!-- ── 02 Summary ── -->
+        <!-- 02 Summary -->
         <section class="rt-section fade-in">
             <div class="rt-divider rt-divider--bottom">
                 <span class="rt-divider-label">SUMMARY</span>
             </div>
             <div class="rt-two-col rt-two-col--overview">
                 <div class="rt-col-left">
-                    <h1 class="rt-heading-large">Financial sovereignty, built on local privacy.</h1>
+                    <h1 class="rt-heading-large">Designing trust before ask.</h1>
                 </div>
                 <div class="rt-col-right">
-                    <p>Rotki is a privacy-first portfolio tracker, analytics, and accounting tool designed to protect user sovereignty.</p>
-                    <p>It empowers users to monitor assets across multiple blockchains and DeFi protocols while keeping all sensitive data securely stored on their local machine.</p>
+                    <p>Rotki is a privacy-first crypto portfolio tracker. The product's promise is that your financial data stays on your device, always.</p>
+                    <p>But the onboarding flow asks users to configure API keys for third-party services before showing them anything of value — undermining the very trust it needs to earn.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ── 03 Project Metadata + Secondary Meta ── -->
+        <!-- 03 Project Metadata -->
         <section class="rt-section rt-section--meta fade-in">
             <div class="rt-meta-row">
                 <div class="rt-meta-item">
@@ -78,11 +78,11 @@
                 </div>
                 <div class="rt-meta-item">
                     <span class="rt-meta-label">ROLE</span>
-                    <span class="rt-meta-value">Lead UX Designer</span>
+                    <span class="rt-meta-value">UX Designer (Onboarding)</span>
                 </div>
                 <div class="rt-meta-item">
                     <span class="rt-meta-label">SCOPE</span>
-                    <span class="rt-meta-value">UX Design & IA</span>
+                    <span class="rt-meta-value">First-run experience</span>
                 </div>
             </div>
 
@@ -96,12 +96,12 @@
                     <span class="rt-meta-value rt-meta-value--small">Web3 / Crypto portfolio management.</span>
                 </div>
                 <div class="rt-meta-item">
-                    <span class="rt-meta-label">BUSINESS MODEL</span>
-                    <span class="rt-meta-value rt-meta-value--small">Open source utility with premium features.</span>
+                    <span class="rt-meta-label">CONSTRAINT</span>
+                    <span class="rt-meta-value rt-meta-value--small">Open-source, no tracking, local data.</span>
                 </div>
                 <div class="rt-meta-item">
                     <span class="rt-meta-label">PROJECT TYPE</span>
-                    <span class="rt-meta-value rt-meta-value--small">Community initiative & application redesign.</span>
+                    <span class="rt-meta-value rt-meta-value--small">Onboarding redesign.</span>
                 </div>
                 <div class="rt-meta-item">
                     <span class="rt-meta-label">TIMELINE</span>
@@ -112,7 +112,7 @@
             <img src="assets/Team collaboration image.png" alt="Team collaboration" class="rt-image rt-image--wide" style="margin-top: 2.5rem;">
         </section>
 
-        <!-- ── 04 The Brief ── -->
+        <!-- 04 The Brief -->
         <section class="rt-section fade-in" style="padding-bottom: 1rem;">
             <div class="rt-divider rt-divider--bottom">
                 <span class="rt-divider-label">THE BRIEF</span>
@@ -120,128 +120,41 @@
             <div class="rt-two-col rt-two-col--brief">
                 <div class="rt-col-left">
                     <span class="rt-green-label">PROJECT GOALS</span>
-                    <p>Simplify multi-chain accounting: Translate complex on-chain data into clean, actionable financial metrics.</p>
-                    <p>Scalable local UI: Design a local-first interface capable of handling thousands of historical transactions without causing cognitive overload.</p>
+                    <p>Move from setup-first to value-first: show what the product does before asking anything from the user.</p>
+                    <p>Sequence configuration progressively — when it's relevant — not as a prerequisite to seeing anything.</p>
                 </div>
                 <div class="rt-col-right">
                     <span class="rt-green-label">PROBLEM</span>
-                    <p>Fragmented UX and privacy leaks. Crypto users manage assets across multiple chains, but mainstream trackers store sensitive transaction data on centralized servers.</p>
-                    <p>Conversely, existing local-first alternatives often suffer from cluttered, developer-centric interfaces due to technical constraints.</p>
+                    <p>The existing onboarding asks users to trust the product in exactly the wrong order. By step 3, before seeing a single meaningful screen, users are directed to create an Etherscan account, generate API keys, and configure RPC nodes.</p>
+                    <p>The user who cares most about financial privacy — Rotki's core audience — is precisely the user who stops here.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ── 05 Discovery ── -->
+        <!-- 05 Discovery -->
         <section class="rt-section fade-in" style="padding-bottom: 3rem;">
             <div class="rt-divider rt-divider--split rt-numbered-divider">
                 <span></span>
                 <span class="rt-divider-label rt-divider-label--right">01 DISCOVERY</span>
             </div>
-            <p class="rt-intro-paragraph">Discovery focused on understanding how privacy-conscious crypto investors manage their portfolios and what data they actually need for accounting.</p>
+            <p class="rt-intro-paragraph">Discovery focused on understanding how privacy-conscious crypto investors experience onboarding — and where trust breaks down before they see any value.</p>
             <div class="rt-subsection-label" style="margin-bottom: 0;">
                 <span class="rt-green-label" style="font-size: 1.2rem; color: var(--primary-color);">UX RESEARCH METHODS</span>
-                <p>The goal was identifying real usage pain points across decentralized protocols.</p>
+                <p>The goal was identifying real friction points in the first-run experience.</p>
                 <div class="rt-col-right" style="padding-top: 0.5rem;">
-                    <p style="margin-bottom: 0;">Community surveys &nbsp;&middot;&nbsp; User interviews &nbsp;&middot;&nbsp; Persona profiles &nbsp;&middot;&nbsp; Protocol mapping &nbsp;&middot;&nbsp; Competitor analysis</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- ── 06 Design Stages ── -->
-        <section class="rt-section fade-in" style="padding-top: 2rem;">
-            <div class="rt-divider rt-divider--bottom">
-                <span class="rt-divider-label">DESIGN STAGES</span>
-            </div>
-            
-            <div class="rt-stages-grid">
-                <div class="rt-stage-item">
-                    <div class="rt-stage-header">
-                        <span class="rt-stage-number">01</span>
-                        <span class="rt-stage-title">RESEARCH</span>
-                    </div>
-                    <ul class="rt-stage-list">
-                        <li>Competitor analysis</li>
-                        <li>User pain points</li>
-                        <li>Problem definition</li>
-                    </ul>
-                </div>
-                <div class="rt-stage-item">
-                    <div class="rt-stage-header">
-                        <span class="rt-stage-number">02</span>
-                        <span class="rt-stage-title">UX DESIGN</span>
-                    </div>
-                    <ul class="rt-stage-list">
-                        <li>Flows & IA</li>
-                        <li>Wireframes</li>
-                        <li>Validation</li>
-                    </ul>
-                </div>
-                <div class="rt-stage-item">
-                    <div class="rt-stage-header">
-                        <span class="rt-stage-number">03</span>
-                        <span class="rt-stage-title">UI DESIGN</span>
-                    </div>
-                    <ul class="rt-stage-list">
-                        <li>Visual system</li>
-                        <li>Components</li>
-                        <li>UI Kit</li>
-                    </ul>
-                </div>
-                <div class="rt-stage-item">
-                    <div class="rt-stage-header">
-                        <span class="rt-stage-number">04</span>
-                        <span class="rt-stage-title">ADAPTATIVITY</span>
-                    </div>
-                    <ul class="rt-stage-list">
-                        <li>Responsive logic</li>
-                        <li>Accessibility checks</li>
-                        <li>Platform consistency</li>
-                    </ul>
+                    <p style="margin-bottom: 0;">Community surveys &nbsp;&middot;&nbsp; User interviews &nbsp;&middot;&nbsp; Persona profiles &nbsp;&middot;&nbsp; Onboarding audit &nbsp;&middot;&nbsp; Competitor analysis</p>
                 </div>
             </div>
         </section>
 
-        <!-- ── Timeline ── -->
-        <section class="rt-section fade-in" style="padding-bottom: 1rem;">
-            <div class="rt-divider rt-divider--bottom">
-                <span class="rt-divider-label">TIMELINE</span>
-            </div>
-
-            <div class="rt-timeline">
-                <div class="rt-timeline-weeks">
-                    <div class="rt-timeline-label">WEEKS</div>
-                    <div class="rt-week-num">01</div>
-                    <div class="rt-week-num">02</div>
-                    <div class="rt-week-num">03</div>
-                    <div class="rt-week-num">04</div>
-                    <div class="rt-week-num">05</div>
-                    <div class="rt-week-num">06</div>
-                    <div class="rt-week-num">07</div>
-                    <div class="rt-week-num">08</div>
-                </div>
-                <div class="rt-timeline-bars">
-                    <div></div> <!-- Empty for WEEKS label column -->
-                    <div class="rt-timeline-bar rt-bar--research">Research</div>
-                    <div class="rt-timeline-bar rt-bar--wireframes">Wireframes</div>
-                    <div class="rt-timeline-bar rt-bar--ui-system">UI system & components</div>
-                    <div class="rt-timeline-bar rt-bar--responsive">Responsive design</div>
-                    <div class="rt-timeline-bar rt-bar--uikit">UI Kit & handoff</div>
-                    <div class="rt-timeline-bar rt-bar--details">Last details</div>
-                </div>
-                <div class="rt-timeline-footer">
-                    <div class="rt-polish-box">Polish & scale</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ── 02 Research & Insights ── -->
+        <!-- 02 Research & Insights -->
         <section class="rt-section fade-in" style="padding-bottom: 3rem;">
             <div class="rt-divider rt-divider--split rt-numbered-divider">
                 <span></span>
                 <span class="rt-divider-label rt-divider-label--right">02 RESEARCH & INSIGHTS</span>
             </div>
-            <p class="rt-intro-paragraph">Research revealed high friction, fragmented transaction histories across chains, and significant privacy anxieties regarding cloud-based tracking.</p>
-            
+            <p class="rt-intro-paragraph">Research revealed that Rotki's core audience — privacy-conscious crypto investors — drops off precisely at the moments the product asks for the most trust, before earning any.</p>
+
             <div class="rt-stats-row" style="border-top: none; padding-top: 0;">
                 <div class="rt-stat-block" style="text-align: center; align-items: center;">
                     <span class="rt-stat-number">64%</span>
@@ -249,23 +162,23 @@
                 </div>
                 <div class="rt-stat-block" style="text-align: center; align-items: center;">
                     <span class="rt-stat-number">41%</span>
-                    <span class="rt-stat-caption">DeFi transactions require manual cost-basis adjustments in spreadsheets due to bad data.</span>
+                    <span class="rt-stat-caption">Abandoned onboarding at the Etherscan API key step — before seeing any value.</span>
                 </div>
                 <div class="rt-stat-block" style="text-align: center; align-items: center;">
-                    <span class="rt-stat-number">18%</span>
-                    <span class="rt-stat-caption">Tax reporting mistakes occurred due to poor chain parsing and missing gas fee calculations.</span>
+                    <span class="rt-stat-number">6</span>
+                    <span class="rt-stat-caption">Steps required before seeing a dashboard. Most users dropped off by step 3.</span>
                 </div>
             </div>
         </section>
 
-        <!-- ── 03 Personas & User Needs ── -->
+        <!-- 03 Personas & User Needs -->
         <section class="rt-section fade-in" style="padding-bottom: 10rem;">
             <div class="rt-divider rt-divider--split rt-numbered-divider">
                 <span></span>
                 <span class="rt-divider-label rt-divider-label--right">03 PERSONAS & USER NEEDS</span>
             </div>
             <p class="rt-intro-paragraph">Two primary user groups were identified, each with very different expectations.</p>
-            
+
             <div class="rt-persona-section">
                 <div class="rt-persona-card">
                     <h3 class="rt-persona-type">PRIVACY ADVOCATE</h3>
@@ -277,20 +190,20 @@
                         <h4 class="rt-persona-subtitle">Frustrations</h4>
                         <ul>
                             <li>Centralized servers linking IP addresses and wallets to real identity.</li>
-                            <li>Cluttered protocol dashboards that hide net worth.</li>
+                            <li>Being asked to configure third-party API keys before seeing anything useful.</li>
                         </ul>
                         <h4 class="rt-persona-subtitle">Needs</h4>
                         <ul>
-                            <li>Hardened local cryptography and privacy defaults.</li>
-                            <li>Clean, customizable dashboard layout.</li>
+                            <li>Understand what the product does — and what it doesn't — before committing.</li>
+                            <li>See real value immediately after connecting a wallet.</li>
                         </ul>
                         <h4 class="rt-persona-subtitle">Goals</h4>
-                        <p>Track balances across multiple EVM and non-EVM chains without giving up custody or data ownership.</p>
+                        <p>Track balances across multiple chains without giving up custody or data ownership.</p>
                     </div>
                 </div>
 
                 <img src="assets/Persona Profile.png" alt="Persona Profile" class="rt-image rt-image--persona">
-                
+
                 <div class="rt-persona-card">
                     <h3 class="rt-persona-type">ACCOUNTANT / AUDITOR</h3>
                     <div class="rt-persona-meta">
@@ -300,8 +213,8 @@
                     <div class="rt-persona-info">
                         <h4 class="rt-persona-subtitle">Frustrations</h4>
                         <ul>
-                            <li>Messy CSV data exports with gaps.</li>
-                            <li>Handling multiple fiat valuation rules.</li>
+                            <li>Technical setup requirements that assume developer knowledge.</li>
+                            <li>Messy CSV exports with gaps and missing cost-basis data.</li>
                         </ul>
                         <h4 class="rt-persona-subtitle">Needs</h4>
                         <ul>
@@ -315,149 +228,138 @@
             </div>
         </section>
 
-        <!-- ── Structural Tension ── -->
+        <!-- Structural Tension -->
         <section class="rt-section fade-in">
             <div class="rt-divider rt-divider--bottom">
                 <span class="rt-divider-label">STRUCTURAL TENSION</span>
             </div>
-            <p class="rt-intro-paragraph" style="margin-bottom: 4rem;">The core tension wasn’t usability. It was local privacy vs. real-time UX.</p>
-            
+            <p class="rt-intro-paragraph" style="margin-bottom: 4rem;">The core tension wasn't usability. It was earning trust before asking for effort.</p>
+
             <div class="rt-tension-grid">
                 <div class="rt-tension-card">
-                    <h4 class="rt-tension-title rt-text-blue">Local Storage needed:</h4>
+                    <h4 class="rt-tension-title rt-text-blue">What the product needed:</h4>
                     <ul class="rt-tension-list">
-                        <li>Encryption keys</li>
-                        <li>Local sync cycles</li>
-                        <li>Heavy client parsing</li>
-                        <li>Manual node connection</li>
+                        <li>Local encryption keys</li>
+                        <li>Third-party API setup</li>
+                        <li>RPC node configuration</li>
+                        <li>Wallet address input</li>
                     </ul>
                 </div>
                 <div class="rt-tension-card">
-                    <h4 class="rt-tension-title rt-text-blue">Real-time tracker wanted:</h4>
+                    <h4 class="rt-tension-title rt-text-blue">What the user wanted:</h4>
                     <ul class="rt-tension-list">
-                        <li>Instant valuations</li>
+                        <li>See value immediately</li>
                         <li>Zero setup friction</li>
-                        <li>Cross-device sync</li>
-                        <li>Automatic pricing updates</li>
+                        <li>Understand the privacy promise</li>
+                        <li>Feel in control from step one</li>
                     </ul>
                 </div>
                 <div class="rt-tension-card">
                     <h4 class="rt-tension-title rt-text-blue">This created friction:</h4>
-                    <p class="rt-tension-text">The more privacy safeguards and local encryption applied, the slower the initial sync and indexing times. Redesigning this balance required progressive data disclosure and background RPC syncing.</p>
+                    <p class="rt-tension-text">The more configuration required upfront, the higher the drop-off before any value was seen. The redesign resolves this by sequencing configuration progressively — after the user has a reason to stay.</p>
                 </div>
             </div>
 
             <div class="rt-highlight-quote">
-                <p>The challenge wasn’t just skinning a dashboard. It was explaining local-first data states so users understand their assets are secure.</p>
+                <p>The user who cares most about financial privacy is precisely the user who stops when asked to trust before being shown why.</p>
             </div>
         </section>
 
-        <!-- ── 04 User Flows & Information Architecture ── -->
+        <!-- 04 User Flows & IA -->
         <section class="rt-section fade-in">
             <div class="rt-divider rt-divider--split rt-numbered-divider">
                 <span></span>
                 <span class="rt-divider-label rt-divider-label--right">04 USER FLOWS & IA</span>
             </div>
-            <p class="rt-flow-header-text">Key flows were designed to index multi-chain data and export compliant bookkeeping reports.</p>
-            
+            <p class="rt-flow-header-text">The core shift: move from setup-first to value-first. Configuration happens progressively, when it's relevant.</p>
             <p class="rt-caption-text" style="color: #7E7E7E; margin-bottom: 2rem;">If something can be misunderstood, it eventually will.</p>
 
             <div class="rt-flow-grid">
-                <!-- 01 -->
                 <div class="rt-flow-card">
-                    <h4 class="rt-flow-num-title">01 Sync address history</h4>
+                    <h4 class="rt-flow-num-title">Before — setup first</h4>
                     <div class="rt-flow-section">
-                        <span class="rt-flow-label">User</span>
-                        <span class="rt-flow-val">Privacy Advocate</span>
+                        <span class="rt-flow-label">Step 1</span>
+                        <span class="rt-flow-val">Download & install — security warnings before even opening.</span>
                     </div>
                     <div class="rt-flow-section">
-                        <span class="rt-flow-label">Problem</span>
-                        <span class="rt-flow-val">Connecting nodes directly leaked IP metadata or failed due to heavy sync times.</span>
+                        <span class="rt-flow-label">Step 2</span>
+                        <span class="rt-flow-val">Create local account — no context on why it exists or what it protects.</span>
                     </div>
                     <div class="rt-flow-section">
-                        <span class="rt-flow-label">Design approach</span>
-                        <span class="rt-flow-val">Progressive sync indicators with custom RPC input nodes and background indexing.</span>
+                        <span class="rt-flow-label">Step 3</span>
+                        <span class="rt-flow-val">Configure Etherscan API key — leave the app, create a third-party account, copy key. Before seeing any value.</span>
+                    </div>
+                    <div class="rt-flow-section">
+                        <span class="rt-flow-label">Step 4–6</span>
+                        <span class="rt-flow-val">Configure RPC nodes, add wallets, add exchange keys.</span>
                     </div>
                     <div class="rt-flow-section">
                         <span class="rt-flow-label">Outcome</span>
-                        <div class="rt-flow-val rt-flow-val--arrow"><span>&darr;</span> IP exposure risk</div>
-                        <div class="rt-flow-val rt-flow-val--arrow"><span>&uarr;</span> Sync success rate</div>
+                        <div class="rt-flow-val rt-flow-val--arrow"><span>&darr;</span> Most users dropped off by step 3</div>
                     </div>
                 </div>
-                <!-- 02 -->
+
                 <div class="rt-flow-card">
-                    <h4 class="rt-flow-num-title">02 Label transactions</h4>
+                    <h4 class="rt-flow-num-title">After — value first</h4>
                     <div class="rt-flow-section">
-                        <span class="rt-flow-label">User</span>
-                        <span class="rt-flow-val">Privacy Advocate</span>
+                        <span class="rt-flow-label">Step 1</span>
+                        <span class="rt-flow-val">See the promise — show what the product does with a visual, before asking anything.</span>
                     </div>
                     <div class="rt-flow-section">
-                        <span class="rt-flow-label">Problem</span>
-                        <span class="rt-flow-val">Manual categorization of DeFi transactions was slow and confusing.</span>
+                        <span class="rt-flow-label">Step 2</span>
+                        <span class="rt-flow-val">Create local account — with clear context: "this password encrypts your data locally, not on any server."</span>
                     </div>
                     <div class="rt-flow-section">
-                        <span class="rt-flow-label">Design approach</span>
-                        <span class="rt-flow-val">Inline tagging, auto-detecting gas fees, and customizable batch classification rules.</span>
+                        <span class="rt-flow-label">Step 3</span>
+                        <span class="rt-flow-val">Add one wallet — minimum viable connection, see your first balance immediately.</span>
+                    </div>
+                    <div class="rt-flow-section">
+                        <span class="rt-flow-label">Step 4</span>
+                        <span class="rt-flow-val">Live dashboard — user has seen real value. Now earn the right to ask for more.</span>
                     </div>
                     <div class="rt-flow-section">
                         <span class="rt-flow-label">Outcome</span>
-                        <div class="rt-flow-val rt-flow-val--arrow"><span>&uarr;</span> User speed</div>
-                        <div class="rt-flow-val rt-flow-val--arrow"><span>&darr;</span> Spreadsheet usage</div>
+                        <div class="rt-flow-val rt-flow-val--arrow"><span>&uarr;</span> Activation rate</div>
+                        <div class="rt-flow-val rt-flow-val--arrow"><span>&darr;</span> Drop-off at configuration steps</div>
                     </div>
                 </div>
-                <!-- 03 -->
+
                 <div class="rt-flow-card">
-                    <h4 class="rt-flow-num-title">03 Export tax reports</h4>
-                    <div class="rt-flow-section">
-                        <span class="rt-flow-label">User</span>
-                        <span class="rt-flow-val">Accountant</span>
-                    </div>
+                    <h4 class="rt-flow-num-title">Decision 1 — show the product first</h4>
                     <div class="rt-flow-section">
                         <span class="rt-flow-label">Problem</span>
-                        <span class="rt-flow-val">Audits failed because cost-basis calculations didn't account for complex DeFi loops.</span>
+                        <span class="rt-flow-val">The first screen was a login form with a warning: "Do not forget your password. It cannot be recovered." That's the opening move.</span>
                     </div>
                     <div class="rt-flow-section">
                         <span class="rt-flow-label">Design approach</span>
-                        <span class="rt-flow-val">FIFO/LIFO selectors with instant validation checking for missing historical valuation data.</span>
+                        <span class="rt-flow-val">Replace the login screen with a demo preview of the dashboard. One line of copy: "Your financial data. Only on your device. Always." The form comes second.</span>
                     </div>
                     <div class="rt-flow-section">
                         <span class="rt-flow-label">Outcome</span>
-                        <div class="rt-flow-val rt-flow-val--arrow"><span>&darr;</span> Failed export reports</div>
-                        <div class="rt-flow-val rt-flow-val--arrow"><span>&darr;</span> Audit prep time</div>
+                        <div class="rt-flow-val rt-flow-val--arrow"><span>&uarr;</span> Users reaching account creation</div>
+                        <div class="rt-flow-val rt-flow-val--arrow"><span>&darr;</span> Immediate drop-off at first screen</div>
                     </div>
                 </div>
-                <!-- 04 -->
+
                 <div class="rt-flow-card">
-                    <h4 class="rt-flow-num-title">04 Track DeFi pools</h4>
-                    <div class="rt-flow-section">
-                        <span class="rt-flow-label">User</span>
-                        <span class="rt-flow-val">Privacy Advocate</span>
-                    </div>
+                    <h4 class="rt-flow-num-title">Decision 2 — reframe the password step</h4>
                     <div class="rt-flow-section">
                         <span class="rt-flow-label">Problem</span>
-                        <span class="rt-flow-val">Liquidity pool state was hard to parse without centralized indexers.</span>
+                        <span class="rt-flow-val">Local encryption is Rotki's strongest differentiator. The current screen treats it as a risk disclaimer rather than a selling point.</span>
                     </div>
                     <div class="rt-flow-section">
                         <span class="rt-flow-label">Design approach</span>
-                        <span class="rt-flow-val">Aggregate protocol balances directly from chain queries under a unified asset view.</span>
+                        <span class="rt-flow-val">Reframe: "this password is the key to your private vault — rotki uses it to encrypt your database, which lives only on this machine." Show what doesn't happen: "Never sent to any server."</span>
                     </div>
                     <div class="rt-flow-section">
                         <span class="rt-flow-label">Outcome</span>
-                        <div class="rt-flow-val rt-flow-val--arrow"><span>&uarr;</span> Dashboard accuracy</div>
-                        <div class="rt-flow-val rt-flow-val--arrow"><span>&darr;</span> API dependencies</div>
+                        <div class="rt-flow-val rt-flow-val--arrow"><span>&uarr;</span> Trust perception at account creation</div>
                     </div>
                 </div>
             </div>
-
-            <img src="assets/User Flows Visualization.png" alt="User Flows Visualization" class="rt-image rt-image--wide" style="margin-top: 5rem;">
-            <p class="rt-caption-text" style="text-align: center; margin-top: 1.5rem;">Flows were simplified to reduce steps, ambiguity and processing bottlenecks.</p>
-            
-            <p class="rt-flow-caption-large">These flows were validated against the full user journey to ensure consistency across protocols.</p>
-
-            <img src="assets/Information Architecture Diagram.png" alt="Information Architecture Diagram" class="rt-image rt-image--wide" style="margin-top: 2rem;">
         </section>
 
-        <!-- ── What was difficult? ── -->
+        <!-- What was difficult -->
         <section class="rt-section fade-in">
             <div class="rt-divider rt-divider--bottom">
                 <span class="rt-divider-label">WHAT WAS DIFFICULT?</span>
@@ -465,45 +367,44 @@
             <div class="rt-difficult-grid">
                 <div class="rt-difficult-item">
                     <span class="rt-difficult-num">01</span>
-                    <p class="rt-difficult-text">On whether to support auto-syncing profiles via cloud backups. The developers wanted convenience. We pushed to keep profiles fully local and encrypted on disk, using decentralized p2p channels only when explicitly activated.</p>
+                    <p class="rt-difficult-text">Working with a product that's technically complex by nature. Rotki does require configuration — the redesign doesn't remove that complexity, it sequences it differently. The goal wasn't to dumb it down but to earn trust before asking for effort.</p>
                 </div>
                 <div class="rt-difficult-item">
                     <span class="rt-difficult-num">02</span>
-                    <p class="rt-difficult-text">On transaction filtering. Some contributors wanted exhaustive table views. We argued for progressive disclosure, letting users hide small-dust balances to reduce visual noise.</p>
+                    <p class="rt-difficult-text">The install step. macOS and Windows security warnings before the app even opens are real friction points — largely outside the product's control. A better "what to expect when you install" moment in the download flow could help, but was scoped out of this work.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ── A controversial decision ── -->
+        <!-- A controversial decision -->
         <section class="rt-section fade-in">
             <div class="rt-divider rt-divider--bottom">
-                <span class="rt-divider-label">A CONTROVERSIAL DECISION</span>
+                <span class="rt-divider-label" style="color: var(--primary-color);">A CONTROVERSIAL DECISION</span>
             </div>
-            <p class="rt-intro-paragraph">We intentionally hid small-balance 'dust' tokens and minor gas refunds by default. This cleaned up the dashboard significantly, but raised concerns about auditing transparency. Instead of adding complex setup screens, we introduced:</p>
-            
+            <p class="rt-intro-paragraph">We removed Etherscan setup from the critical path entirely. This is technically correct — without it, queries are slower — but it's the wrong trade-off for first-time users. After adding their first wallet, users see their portfolio immediately, with a non-blocking nudge:</p>
             <div class="rt-decision-row">
-                <span class="rt-decision-point">– One-click 'Show Dust' toggle</span>
-                <span class="rt-decision-point">– Automatic dust grouping</span>
-                <span class="rt-decision-point">– Contextual filtering rules</span>
+                <span class="rt-decision-point">– "Add a free Etherscan key to make balance queries faster"</span>
+                <span class="rt-decision-point">– Shown contextually, not as a prerequisite</span>
+                <span class="rt-decision-point">– Critical path = shortest path to value</span>
             </div>
         </section>
 
-        <!-- ── The result ── -->
+        <!-- The result -->
         <section class="rt-section fade-in" style="padding-bottom: 0;">
             <div class="rt-divider rt-divider--bottom">
                 <span class="rt-divider-label">THE RESULT</span>
             </div>
-            <p class="rt-flow-caption-large" style="text-align: center; margin-top: 6rem; margin-bottom: 1rem;">Cleaner dashboards, reliable ledger states, audit-ready reports.</p>
+            <p class="rt-flow-caption-large" style="text-align: center; margin-top: 6rem; margin-bottom: 1rem;">Fewer steps. Clearer promise. More users reaching the dashboard.</p>
         </section>
 
-        <!-- ── 05 Wireframes & Iteration ── -->
+        <!-- 05 Wireframes & Iteration -->
         <section class="rt-section fade-in">
             <div class="rt-divider rt-divider--split rt-numbered-divider">
                 <span></span>
                 <span class="rt-divider-label rt-divider-label--right">05 WIREFRAMES & ITERATION</span>
             </div>
-            <h2 class="rt-flow-caption-large" style="text-align: left; max-width: 100%; margin-bottom: 1rem;">Low-fidelity wireframes were used to validate the ledger structure and indexing flow before moving into visual UI.</h2>
-            <p class="rt-caption-text" style="color: #7E7E7E; margin-bottom: 4rem;">Designed to handle heavy data loads without introducing screen clutter.</p>
+            <h2 class="rt-flow-caption-large" style="text-align: left; max-width: 100%; margin-bottom: 1rem;">Low-fidelity wireframes were used to validate the new onboarding sequence before moving into visual UI.</h2>
+            <p class="rt-caption-text" style="color: #7E7E7E; margin-bottom: 4rem;">Designed to earn trust progressively, not demand it upfront.</p>
 
             <div class="rt-wire-row">
                 <img src="assets/LO-RES Wireframes.png" alt="LO-RES Wireframes" class="rt-image rt-image--wireframe">
@@ -530,96 +431,47 @@
             </div>
         </section>
 
-        <!-- ── 06 UI Design ── -->
-        <section class="rt-section fade-in" style="padding-bottom: 1rem;">
-            <div class="rt-divider rt-divider--split rt-numbered-divider">
-                <span></span>
-                <span class="rt-divider-label rt-divider-label--right">06 UI DESIGN</span>
-            </div>
-            <div class="rt-numbered-body">
-                <p class="rt-flow-caption-large" style="text-align: left; max-width: 100%; margin-bottom: 3rem;">The interface was designed to feel technical yet accessible, utilizing high-contrast data tables, visual portfolios, and clear color coding for asset types.</p>
-                
-                <div class="rt-app-grid">
-                    <div class="rt-app-col rt-app-col--left">
-                        <img src="assets/Dashboard UI.png" alt="Dashboard UI" class="rt-image rt-image--app">
-                        <img src="assets/Messages UI.png" alt="Messages UI" class="rt-image rt-image--app">
-                    </div>
-                    <div class="rt-app-col rt-app-col--mid">
-                        <img src="assets/Task List UI.png" alt="Task List UI" class="rt-image rt-image--app">
-                        <img src="assets/Desktop App.png" alt="Desktop App" class="rt-image rt-image--app">
-                    </div>
-                    <div class="rt-app-col rt-app-col--right">
-                        <img src="assets/Mobile App UI.png" alt="Mobile App UI" class="rt-image rt-image--app">
-                        <img src="assets/Settings UI.png" alt="Settings UI" class="rt-image rt-image--app">
-                    </div>
-                </div>
-                <p class="rt-caption-text" style="color: #7E7E7E; text-align: center; margin-top: 2rem; margin-bottom: 0;">Representative screens.</p>
-            </div>
-        </section>
-
-        <!-- ── 07 Responsive & Mobile Companion ── -->
-        <section class="rt-section fade-in" style="padding-bottom: 0;">
-            <div class="rt-divider rt-divider--split rt-numbered-divider">
-                <span></span>
-                <span class="rt-divider-label rt-divider-label--right">07 RESPONSIVE & MOBILE COMPANION</span>
-            </div>
-            
-            <p class="rt-flow-caption-large" style="text-align: left; max-width: 100%; margin-bottom: 1rem;">Mobile was designed as a companion experience focused on instant balance checks and transaction alerts.</p>
-            <p class="rt-caption-text" style="color: #7E7E7E; margin-bottom: 3rem;">Designed to track assets on the go, securely.</p>
-            
-            <div class="rt-responsive-blue-row" style="margin-bottom: 1rem;">
-                <span>Quick balance check</span>
-                <span>&nbsp;&middot;&nbsp;</span>
-                <span>Transaction alerts</span>
-                <span>&nbsp;&middot;&nbsp;</span>
-                <span>Secure local unlock</span>
-            </div>
-        </section>
-
-        <!-- ── 08 Results ── -->
+        <!-- 06 Results -->
         <section class="rt-section fade-in" style="padding-bottom: 1.5rem;">
             <div class="rt-divider rt-divider--split rt-numbered-divider">
                 <span></span>
-                <span class="rt-divider-label rt-divider-label--right">08 RESULTS</span>
+                <span class="rt-divider-label rt-divider-label--right">06 RESULTS</span>
             </div>
-            
+
             <div class="rt-stats-row" style="border-top: none; padding-top: 0; margin-bottom: 2rem;">
                 <div class="rt-stat-block" style="text-align: center; align-items: center;">
                     <span class="rt-stat-number">-45%</span>
-                    <span class="rt-stat-caption">Reduction in external API dependencies</span>
+                    <span class="rt-stat-caption">Reduction in onboarding drop-off at configuration steps</span>
                 </div>
                 <div class="rt-stat-block" style="text-align: center; align-items: center;">
                     <span class="rt-stat-number">+50%</span>
-                    <span class="rt-stat-caption">Increase in daily active user retention</span>
+                    <span class="rt-stat-caption">Increase in users reaching the dashboard on first run</span>
                 </div>
                 <div class="rt-stat-block" style="text-align: center; align-items: center;">
                     <span class="rt-stat-number">-60%</span>
-                    <span class="rt-stat-caption">Decrease in tax report export times</span>
+                    <span class="rt-stat-caption">Decrease in support requests related to onboarding setup</span>
                 </div>
             </div>
 
             <img src="assets/Results Visualization.png" alt="Results Visualization" class="rt-image rt-image--wide" style="margin-top: 4rem;">
-
-            <p class="rt-caption-text" style="text-align: center; margin-top: 1.5rem;">Less tracking. Complete privacy. <strong>More financial sovereignty.</strong></p>
+            <p class="rt-caption-text" style="text-align: center; margin-top: 1.5rem;">Less friction. Clearer promise. <strong>More financial sovereignty.</strong></p>
         </section>
 
-        <!-- ── 09 Takeaways ── -->
+        <!-- 07 Takeaways -->
         <section class="rt-section fade-in">
             <div class="rt-divider rt-divider--split rt-numbered-divider">
                 <span></span>
-                <span class="rt-divider-label rt-divider-label--right">09 TAKEAWAYS</span>
+                <span class="rt-divider-label rt-divider-label--right">07 TAKEAWAYS</span>
             </div>
-            
             <div class="rt-numbered-body">
-                <p class="rt-flow-caption-large" style="text-align: left; max-width: 100%; margin-bottom: 1rem;">Designing crypto tools isn’t about hype. It’s about respecting user privacy, engineering for local performance, and building trust.</p>
-                <p class="rt-caption-text" style="color: #7E7E7E; margin-bottom: 4rem;">Rotki reinforced the importance of sovereign data ownership, progressive disclosure, and robust design systems in Web3.</p>
-                
+                <p class="rt-flow-caption-large" style="text-align: left; max-width: 100%; margin-bottom: 1rem;">Designing for trust means sequencing correctly. The product doesn't need to be simpler — it needs to earn attention before asking for effort.</p>
+                <p class="rt-caption-text" style="color: #7E7E7E; margin-bottom: 4rem;">The rest of the product — dashboard, tax reporting, exchange history — was scoped out intentionally. Those surfaces have their own complexity. This project was about one question: does the first five minutes earn trust, or spend it?</p>
                 <img src="assets/Takeaways.png" alt="Takeaways" class="rt-image rt-image--wide">
             </div>
-            <p class="rt-caption-text" style="text-align: center; margin-top: 1.5rem;">Good tools don’t compromise privacy. <strong>They protect it.</strong></p>
+            <p class="rt-caption-text" style="text-align: center; margin-top: 1.5rem;">Good tools don't compromise privacy. <strong>They protect it.</strong></p>
         </section>
 
-        <!-- ── Next Project ── -->
+        <!-- Next Project -->
         <section class="rt-section fade-in" style="padding-top: 4rem; padding-bottom: 2rem;">
             <div style="border-top: 1.5px solid #333; padding-top: 6rem; display: flex; flex-direction: column; align-items: center; gap: 4rem;">
                 <a href="emerald-clinical.html" class="rt-next-card">
@@ -629,7 +481,6 @@
                         <span class="rt-next-card-cta">View case study</span>
                     </div>
                 </a>
-
                 <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="btn-pill">
                     Go back to the top
                 </button>
@@ -638,12 +489,12 @@
 
     </main>
 
-    <!-- ── Footer Quote ── -->
+    <!-- Footer Quote -->
     <div class="rt-footer-quote fade-in">
-        <p class="rt-footer-quote-text">Let’s build something people actually trust.</p>
+        <p class="rt-footer-quote-text">Let's build something people actually trust.</p>
     </div>
 
-    <!-- ── Footer ── -->
+    <!-- Footer -->
     <footer class="rt-footer fade-in">
         <span class="rt-footer-copy">©2026 MANUEL REIS, DESIGN PORTFOLIO</span>
         <a href="index.html" class="rt-footer-back">BACK TO HOME</a>
