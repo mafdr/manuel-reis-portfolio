@@ -87,10 +87,12 @@ section {
 /* â”€â”€ New project cards grid â”€â”€ */
 .project-cards-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
     align-items: start;
 }
+
+
 
 .proj-card {
     display: flex;
