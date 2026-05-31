@@ -7,17 +7,17 @@
     background-color: #050505;
     
     /* Rotki Case Study Color Theme overrides */
-    --text-green: #FFA733; /* Robin Orange */
-    --green-rgb: 255, 167, 51;
-    --primary-color: #FF5A36; /* Robin Red-Orange */
-    --primary-rgb: 255, 90, 54;
+    --text-green: #B2E045; /* Green */
+    --green-rgb: 178, 224, 69;
+    --primary-color: #8BA4FF; /* Blue */
+    --primary-rgb: 139, 164, 255;
 }
 
 body.case-study-page.light-mode {
     --text-green: #D97D00;
-    --green-rgb: 217, 125, 0;
-    --primary-color: #E03E1A;
-    --primary-rgb: 224, 62, 26;
+    --green-rgb: 178, 224, 69;
+    --primary-color: #4a6ffe;
+    --primary-rgb: 74, 111, 254;
 }
 
 /* ── Nav ── */
@@ -1631,6 +1631,3 @@ body.light-mode .rt-footer-quote-text {
     letter-spacing: 0.05em;
     text-align: center;
 }
-
-
-
